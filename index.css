@@ -21,8 +21,28 @@ body {
 
 }
 
-main {
+main h1, main p {
     text-align: center;
+}
+
+.api-settings {
+    max-width: 450px;
+    margin: .5em 1em;
+}
+
+.api-settings > label {
+    font-weight: 700;
+    display: grid;
+    grid-template-columns: 30% 1fr;
+    align-items: center;
+}
+
+.api-settings > label > select {
+    font-size: 1rem;
+    padding: .25em 1.5em;
+    width: 100%;
+    border: none;
+    color: inherit;
 }
 
 h1 {
@@ -45,13 +65,20 @@ button {
     background-color: #4D5B9E;
     border-radius: 15px;
     font-weight: 600;
+    transition: scale .3s, box-shadow .4s;
 }
 
 .start-button {
-    margin-top: .75em;
+    display: block;
+    margin: 0 auto;
+    margin-top: 2em;
     font-size: 1.25rem;
-    padding: .8em 3.25em;
+    padding: .8em 3.25em; 
+}
 
+button:hover {
+    scale: 1.05;
+    box-shadow: #0033ff53 0px 0px 15px; 
 }
 
 label {
@@ -110,8 +137,13 @@ input  {
     gap: 1em;
 }
 
+.all-questions-container > p {
+    text-align: center;
+    margin-bottom: 0;
+}
+
 .all-questions-container button {
-    margin: 2em auto;
+    margin: 1.5em auto;
     font-size: 1rem;
     width: fit-content;
     padding: 1em 2em;

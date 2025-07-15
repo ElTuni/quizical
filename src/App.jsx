@@ -10,7 +10,7 @@ export default function App() {
     return(
         <main>
             {userState === "Home" && <Home setUserState={setUserState} apiSettings={apiSettings}/>}
-            {(userState === "Game" || userState === "Results") && <Game setUserState={setUserState} userState={userState} apiSettings={apiSettings} />}
+            {(userState === "Game" || userState === "Results" || userState === "Not Found" || userState === "Searching" || userState === "Rate Limit") && <Game setUserState={setUserState} userState={userState} apiSettings={apiSettings} />}
         </main>
     )
 }
